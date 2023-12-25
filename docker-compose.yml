@@ -1,11 +1,11 @@
 version: "3"
 services:
-  postgres:
-    container_name: postgres
+  studydb :
+    container_name: postgres2
     image: postgres:latest
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment:
       - POSTGRES_USER=sumin
       - POSTGRES_PASSWORD=suminpassword
-      - POSTGRES_DB=sumindb
+      - POSTGRES_DB=studydb
